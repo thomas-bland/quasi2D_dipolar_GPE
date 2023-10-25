@@ -86,7 +86,7 @@ end
 
 % %Here are the 2D dipolar potentials required for the calculations
 Udd_perp=2 - 3/sqrt(2)*sqrt(pi)*k.*erfcx(k/sqrt(2));
-Udd_par=-1 + 3*sqrt(pi/32).*kssd./k.*erfcx(k/sqrt(2));
+Udd_par=-1 + 3*sqrt(pi/2).*kssd./k.*erfcx(k/sqrt(2));
 
 %solves issue with 0/0...
 Udd_par(1,1)=-1;
